@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Isurbide1.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <ContentView Padding="0,5,0,5"
+                         BackgroundColor="Orange">
+                <Label Text="SAT - Inicio Sesion" 
+                   HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Orange" Font="Bold" TextColor="White" />
+            </ContentView>
+            <Image Source="logoisurbide.png" Margin="0,50,0,50" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="White"></Image>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Usuario" 
+                       Font="Bold"
+                       FontSize="Medium"
+                       TextColor="Black"
+                       Margin="7,0,0,0"
+                       HorizontalOptions="Start" VerticalOptions="Center" />
+                <Entry x:Name="usernameEntry" 
+                       Placeholder="username"
+                       
+                       Margin="10,0,0,10" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Contraseña"
+                       Font="Bold"
+                       FontSize="Medium"
+                       TextColor="Black"
+                       Margin="7,0,0,0"
+                       HorizontalOptions="Start" VerticalOptions="Center" />
+                <Entry x:Name="passwordEntry" 
+                       IsPassword="true"
+                       Margin="10,0,0,10" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <Button Text="Iniciar" 
+                    Clicked="OnLoginButtonClicked"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center" />
+            <Button Text="Salir" 
+                    Clicked="OnSalir"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center" />
+            <Label x:Name="messageLabel" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Isurbide1"
+             x:Class="Isurbide1.MainPage">
+    <StackLayout>
+        <Label Text="SAT - Inicio Sesion" HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="Orange" Font="Bold" TextColor="White" />
+        <Button Text="Jornada" Clicked="OnJornadaButtonClicked" />
+        <Button Text="Ot's Pendientes" Clicked="OnPendientesButtonClicked" />
+        <Button Text="Ot's Finalizadas" Clicked="OnFinalizadasButtonClicked" />
+        <Button Text="Agenda" Clicked="OnAgendaClicked" />
+    </StackLayout>
+</ContentPage>
